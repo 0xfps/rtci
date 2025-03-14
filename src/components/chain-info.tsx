@@ -189,12 +189,18 @@ export default function ChainInfo({ chain }: ChainInfoProps) {
           </div>
           <div className="text-xs flex items-center p-2">
             <SiPointy />
-            <span
-              className="ml-2 cursor-pointer py-1 px-4 tracking-wide bg-div-bg border-border border-1 rounded-md hover:bg-border"
+            <div
+              className="ml-2 w-fit cursor-pointer py-1 px-2 tracking-wide bg-div-bg border-border border-1 rounded-md hover:bg-border"
               onClick={copyRPC}
             >
-              {copied ? <FaCheck /> : <FaCopy />}
-            </span>
+              {copied ? (
+                <FaCheck />
+              ) : (
+                <span className="flex items-center">
+                  <FaCopy /> <span className="ml-1">RPC</span>
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
