@@ -21,7 +21,7 @@ export default function Header() {
       </div>
       <div className="w-9/12 md:w-7/12 lg:w-8/12 h-fit">
         <b className="text-2xl">RTCI</b>
-        <p className="text-dim text-sm">Real Time Chains Information</p>
+        <p className="text-dim text-sm">Real Time Chain Information</p>
       </div>
       <div className="w-12/12 md:w-3/12 lg:w-3/12 flex justify-end items-center mt-3 lg:mt-0 gap-2">
         <a
