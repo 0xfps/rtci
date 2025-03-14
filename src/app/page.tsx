@@ -17,7 +17,7 @@ export default function Home() {
   const { page, setPage } = useContext(PaginationContext);
   const [maxPage, setMaxPage] = useState<number>(0);
   const [startIndex, setStartIndex] = useState<number>(0);
-  const CHAINS_IN_A_PAGE = 50;
+  const CHAINS_IN_A_PAGE = 12;
   const router = useRouter();
 
   useEffect(
